@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <!--Main source of the code started from here-->
+    <h1>My Marvel Gallary</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="1edbee55-158e-4e29-9f5f-6819172b1f79.jpeg" alt="Image 1">
+        <img src="6a423508-477c-4b9b-95e6-6e4f10fdf98b.jpeg" alt="Image 2">
+        <img src="Black Widow Movie (2021) - Scarlett Johansson.jpeg" alt="Image 3">
+        <img src="Captain America.jpeg" alt="Image 4">
+        <img src="How The Marvel Cinematic Universe Is Paying Tribute To Its King, Chadwick Boseman.jpeg" alt="Image 5">
+        <img src="d936c90c-76b9-46a7-adcb-1b2bb47eabd3.jpeg" alt="Image 6">
+        <img src="Iron Man.jpeg" alt="Image 7">
+        <img src="sam wilson icon ⊹ ⋆ ﾟ_.jpeg" alt="Image 7">
+        <img src="Hulk.jpeg" alt="Image 8">
+        
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <!-- Thumbnails container -->
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+<br/>
+    <div class="image-container">
+        <img src="me.png" alt="me image" class="circular-image">
+      </div>
+      <h3>Web designer : Josiah Boakye</h3>
+    <script src="script.js"></script>
+</body>
+</html>
